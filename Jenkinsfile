@@ -44,8 +44,8 @@ pipeline {
             }
             steps {
                 sh '''
-                    npm i -g serve
-                    serve -s build
+                    npm i serve
+                    npx serve -s build
                     npx playwright test
                 '''
             }
